@@ -1,0 +1,260 @@
+body{
+    background-image: url("./PlayerPage1.jpg") ;
+    background-color: #cccccc;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+#bg{
+    height: 800px;
+    position: relative;
+
+}
+
+#player1{
+    
+    width: 791px;
+    height: 800px;
+}
+
+
+#header1{
+    height: 300px;
+    width: 791px;
+    
+    position: relative;
+}
+
+#h1p1{
+    position: absolute;
+    left :280px;
+    top:75px;
+    font-size: 1.75cm;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(226, 226, 226);
+    font-weight: bolder;
+    text-shadow: 2px 2px #0f0f0f;
+}
+
+#h2p1{
+    position: absolute;
+    left :30px;
+    top:190px;
+    font-size: 1.30cm;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 3, 39);
+    font-weight: bolder;
+
+}
+
+.vl {
+    border-right: 10px solid rgb(131, 4, 0);
+    height: 700px;
+    position: absolute;
+    left:785px;
+    bottom: 75px ;
+}
+
+#backb1{
+    position: absolute;
+    left: 670px;
+    top:730px ;
+  background-color: #3b03d4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#backb1{
+    transition-duration: 0.4s;
+}
+  
+#backb1:hover {
+    background-color: #4328d8; /* Green */
+    color: white;
+}
+
+
+#nextb2{
+    position: absolute;
+    right: 670px;
+    top:730px ;
+  background-color: #3b03d4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#nextb2{
+    transition-duration: 0.4s;
+}
+  
+#nextb2:hover{
+    background-color: #4328d8; /* Green */
+    color: white;
+}
+
+
+#hi{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#p1{
+
+    height: 450px;
+    width: 791px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 150px 150px 150px ;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 255px;
+    
+    
+}
+
+
+#p2{
+
+    height: 450px;
+    width: 791px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 150px 150px 150px ;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 255px;
+    
+    
+}
+
+
+
+
+.d{
+    height: 140px;
+    width: 140px;
+    background-color: chartreuse;
+    border: 5px solid red;
+    
+    
+}
+
+.A{
+    background-image: url("./A1.jpg");
+    background-position: center;  
+}
+
+.At{
+    background-image: url("./At.png");
+    background-position: center;  
+}
+
+.B{
+    background-image: url("./B.png");
+    background-position: center;  
+}
+
+.C{
+    background-image: url("./C.jpg");
+    background-position: center;  
+    
+}
+
+.CC{
+    background-image: url("./CC.jpg");
+    background-position: center;  
+}
+
+.F{
+    background-image: url("./F.jpg");
+    background-position: center;  
+}
+
+.J{
+    background-image: url("./J.png");
+    background-position: center;  
+}
+
+.W{
+    background-image: url("./W.png");
+    background-position: center;  
+}
+
+
+
+
+
+
+
+
+
+
+#player2{
+    width: 791px;
+    height: 800px;
+    position: absolute;
+    top:0px;
+    left:791px;
+}
+
+
+#header2{
+    height: 300px;
+    width: 791px;
+    
+    position: relative;
+}
+
+
+#h1p2{
+    position: absolute;
+    left :280px;
+    top:75px;
+    font-size: 1.75cm;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(226, 226, 226);
+    font-weight: bolder;
+    text-shadow: 2px 2px #0f0f0f;
+
+}
+
+
+#h2p2{
+    position: absolute;
+    left :30px;
+    top:190px;
+    font-size: 1.30cm;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 3, 39);
+    font-weight: bolder;
+}
+
+
