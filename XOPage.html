@@ -28,17 +28,38 @@
     <div id ="bg3">
 
         <div id = "bg3D1">
+
+          <div class = 'wrapper'>
+            <h1 style='display: none;' id = 'pl1win' class ="title" ></h1>
+          </div>
+
+          <div class = 'wrapper'>
+            <h1 style='display: none;' id = 'pl2win' class ="title" ></h1>
+          </div>
+
+          <div class = 'wrapper'>
+            <h1 style='display: none;' id = 'draw' class ="title" ></h1>
+          </div>
+
+
+          <button style='display: none;'  id = "playagain" onClick="window.location.reload();">Play Again</button>
+
+
+          <h1 style="display: none;" id ="H3">3</h1>
+          <h1 style="display: none;" id ="H2">2</h1>
+          <h1 style="display: none;" id ="H1">1</h1>
+          <h1 style="display: none;" id ="start">Start</h1>
            
-            <div id = "XO">
-            <div type=button  class="i"></div>
-             <div type=button  class="i"></div>
-            <div type=button  class="i"></div>
-            <div type=button  class="i"></div>
-            <div type=button  class="i"></div>
-            <div type=button  class="i"></div>
-            <div  type=button class="i"></div>
-            <div type=button  class="i"></div>
-            <div type=button  class="i"></div>
+            <div style="display: none;"  id = "XO">
+            <div id ='x0' type=button  class="i" onclick="xo1()"></div>
+             <div id ='x1' type=button  class="i" onclick="xo1()"></div>
+            <div id ='x2' type=button  class="i" onclick="xo1()"></div>
+            <div id ='x3' type=button  class="i" onclick="xo1()"></div>
+            <div id ='x4' type=button  class="i" onclick="xo1()"></div>
+            <div id ='x5' type=button  class="i" onclick="xo1()"></div>
+            <div  id ='x6' type=button class="i" onclick="xo1()"></div>
+            <div id ='x7' type=button  class="i" onclick="xo1()"></div>
+            <div id ='x8' type=button  class="i" onclick="xo1()"></div>
             </div>
         
 
@@ -48,11 +69,13 @@
             <h1 id = "bg3D1d1h1">Player 1</h1>
 
            
-            <div id = "bg3dpl1"></div>
+            <div  type = button  id = "bg3dpl1" onclick="changeplayer()"></div>
           
 
 
-            <h1 id = "bg3hpl1">Armored Titan</h1>
+            <h1 id = "bg3hpl1"></h1>
+
+            <button style="display: none;"  onclick="ready1()" id = 'butpl1'>Ready</button>
 
             <svg id="pb2" xmlns="http://www.w3.org/2000/svg"  type = button  width="50" height="50" fill="black" class="bi bi-pause-circle-fill" viewBox="0 0 16 16" onclick="pause_sound()">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
@@ -75,23 +98,34 @@
            <h1 id = "bg3D1d1h2">Player 2</h1>
 
 
-            <div id = "bg3dpl2"></div>
+            <div type = button id = "bg3dpl2"  onclick="changeplayer()" ></div>
 
 
-            <h1 id = "bg3hpl2">Armored Titan</h1>
+            <h1  id = "bg3hpl2"></h1>
+
+            <button style="display: none;"  onclick="ready2();countsound1(); playsound();" id = 'butpl2'>Ready</button>
 
 
          </div>
 
-         <audio id="audiosel"  hidden >
+         <audio id="audiosel" preload="auto"  hidden >
           <source src="./zapsplat_multimedia_game_tone_pick_up_collect_item_sci_fi_004_46204.mp3" type="audio/mp3">
+         </audio>
+
+         <audio id="audiocou"  hidden >
+          <source src="./countdown.mp3" type="audio/mp3">
+         </audio>
+
+
+         <audio id="win5"  hidden >
+          <source src="./Win.mp3" type="audio/mp3">
          </audio>
 
 
 
 
-         <div id="Titan">
 
+         <div id="Titan">
           <div id ='p1s1'  type=button  class="d A" onclick="playerselection()"  ></div>
           <div  id ='p1s2' type=button  class="d At" onclick="playerselection() "></div>
           <div id ='p1s3' type=button  class="d B" onclick="playerselection() " ></div>
