@@ -23,8 +23,6 @@ function winn() {
 
 
 
-
-
 let player1;
 let player2;
 let select1 = true;
@@ -184,6 +182,7 @@ function xo1(){
           document.getElementById('pl1win').innerText = player1name + ' Win'
           document.getElementById('pl1win').style.display = ""
           document.getElementById('playagain').style.display = ""
+          
           pause_sound()
           winn()
 
@@ -196,6 +195,9 @@ function xo1(){
           document.getElementById('draw').style.display = ""
           document.getElementById('playagain').style.display = ""
         }
+         document.getElementById('pl1lig').style.backgroundColor='rgb(0, 2, 37)'
+         document.getElementById('pl2lig').style.backgroundColor='rgb(251, 255, 0)'
+
          select2 = false
          break } }
 
@@ -220,7 +222,10 @@ function xo1(){
           winn()
 
           }
-       } else { select2 = true
+       } else { 
+        document.getElementById('pl2lig').style.backgroundColor='rgb(0, 2, 37)'
+        document.getElementById('pl1lig').style.backgroundColor='rgb(251, 255, 0)'
+         select2 = true
           break } }
  
      }
