@@ -18,6 +18,16 @@
   <body>
 
     
+    <div class = 'loader_bg'>
+      <div class = 'loader'></div>
+
+
+
+
+    </div>
+
+
+    
 
     <audio id='sound' controls autoplay hidden  loop >
             
@@ -29,7 +39,7 @@
 
         <div id = "bg3D1">
 
-          <div class = 'wrapper'>
+          <div  id= 'hi' class = 'wrapper'>
             <h1 style='display: none;' id = 'pl1win' class ="title" ></h1>
           </div>
 
@@ -42,7 +52,7 @@
           </div>
 
 
-          <button style='display: none;'  id = "playagain" onClick="window.location.reload();">Play Again</button>
+          <a href="./XOPage.html"><button style='display: none;'  id = "playagain" >Play Again</button></a>
 
 
           <h1 style="display: none;" id ="H3">3</h1>
@@ -86,6 +96,10 @@
             <svg id="pb1" xmlns="http://www.w3.org/2000/svg" type = button width="50" height="50" fill="black" class="bi bi-play-circle-fill" viewBox="0 0 16 16" onclick="playsound()">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
            </svg>
+           <a href="./HomePage.html">
+           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-house-door-fill" viewBox="0 0 16 16" type = button >
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+          </svg> </a>
 
 
 
@@ -210,6 +224,14 @@
 
 
  <script src="./C23_OmarProject.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script>
+     setTimeout(function(){
+         $('.loader_bg').fadeToggle();
+     } , 800 )
+ </script>
+
 
   </body>
 </html>
